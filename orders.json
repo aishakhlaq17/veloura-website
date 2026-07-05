@@ -1,0 +1,66 @@
+[
+  {
+    "name": "ayesha",
+    "email": "aishakhlaq17@gmail.com",
+    "address": "khayaban-e-aziz colony street number 3",
+    "payment": "COD",
+    "cart": []
+  },
+  {
+    "name": "ayesha",
+    "email": "aishakhlaq17@gmail.com",
+    "address": "nandla chowk",
+    "city": "multan",
+    "phone": "03084818833",
+    "payment": "cod",
+    "cart": [
+      {
+        "name": "SNOW VEIL",
+        "price": 550
+      }
+    ]
+  },
+  {
+    "name": "ayesha",
+    "email": "aishakhlaq17@gmail.com",
+    "address": "nandla chowk",
+    "city": "multan",
+    "phone": "03084818833",
+    "payment": "cod",
+    "cart": [
+      {
+        "name": "SNOW VEIL",
+        "price": 550
+      }
+    ]
+  },
+  {
+    "customer": {
+      "name": "ayesha",
+      "email": "aishakhlaq17@gmail.com",
+      "address": "khayaban-e-aziz colony street number 3",
+      "city": "multan",
+      "phone": "03084818833"
+    },
+    "paymentMethod": "cod",
+    "shipping": 300,
+    "cart": [
+      {
+        "name": "CHECK LACE",
+        "price": 350
+      },
+      {
+        "name": "LUNA PEARL",
+        "price": 350
+      },
+      {
+        "name": "LACE AURA",
+        "price": 350
+      },
+      {
+        "name": "SNOW VEIL",
+        "price": 550
+      }
+    ]
+  }
+]

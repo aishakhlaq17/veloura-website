@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloura Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<div class="checkout-page">
+
+    <!-- LEFT SIDE -->
+    <div class="checkout-left">
+        <h1>VELOURA Checkout</h1>
+        <p class="checkout-subtitle">Secure Luxury Checkout</p>
+
+        <h2>Contact</h2>
+        <input type="email" id="email" placeholder="Email">
+
+        <h2>Delivery</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <h2>Payment Method</h2>
+        <select id="payment" onchange="showPaymentDetails()">
+            <option value="cod">Cash on Delivery</option>
+            <option value="easypaisa">Easypaisa</option>
+            <option value="jazzcash">JazzCash</option>
+            <option value="bank">Soneri Bank</option>
+        </select>
+
+        <!-- Payment Details -->
+        <div id="payment-details"></div>
+
+        <button onclick="placeOrder()">Complete Order</button>
+
+        <p class="secure-text">
+            🔒 Secure Checkout • Cash on Delivery Available
+        </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="checkout-right">
+        <h2>Order Summary</h2>
+
+        <!-- Cart Items -->
+        <div id="checkout-items"></div>
+
+        <!-- Summary -->
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <span id="subtotal-price">PKR 0</span>
+        </div>
+
+        <div class="summary-line">
+            <span>Shipping</span>
+            <span id="shipping-price">PKR 0</span>
+        </div>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <span id="checkout-total">PKR 0</span>
+        </div>
+    </div>
+
+</div>
+
+<script src="checkout.js"></script>
+</body>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h2 class="footer-logo">VELOURA</h2>
+            <p class="footer-tagline">
+                Luxury Hair Accessories
+            </p>
+
+            <div class="footer-social">
+                <a href="https://instagram.com/shoppveloura" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/share/191wFwtJcj/?mibextid=wwXIfr" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Policies</h3>
+
+            <a href="shipping.html">Shipping Policy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="refund.html">Return & Exchange</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Information</h3>
+
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="collections.html">Collections</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe to receive exclusive launches, offers and new collections.
+            </p>
+
+            <form class="newsletter">
+
+                <input
+                    type="email"
+                    placeholder="Your email address">
+
+                <button>
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Veloura. All Rights Reserved.
+
+    </div>
+
+</footer>
+</html>

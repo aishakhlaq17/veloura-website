@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raven Lace | Veloura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">VELOURA</div>
+    </nav>
+
+    <section class="product-page">
+
+        <!-- Product Images -->
+        <div class="product-images">
+            <img id="main-image" src="images/raven lace.png.jpeg" alt="Raven Lace">
+
+            <div class="thumbnails">
+                <img src="images/raven lace.png.jpeg" onclick="changeImage(this.src)">
+                <img src="images/raven lace.png.jpeg" onclick="changeImage(this.src)">
+                <img src="images/raven lace.png.jpeg" onclick="changeImage(this.src)">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1>RAVEN LACE</h1>
+            <h2>PKR 350</h2>
+
+            <p>
+                Soft premium satin scrunchie with signature lace detailing.
+                Designed for timeless elegance and everyday luxury.
+            </p>
+
+            <div class="quantity-box">
+                <button onclick="decreaseQty()">-</button>
+                <span id="qty">1</span>
+                <button onclick="increaseQty()">+</button>
+            </div>
+
+            <button class="add-cart-btn" onclick="addProductToCart()">
+                Add to Cart
+            </button>
+        </div>
+
+    </section>
+
+    <script src="product.js"></script>
+
+</body>
+</html>

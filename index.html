@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veloura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cart-overlay" class="cart-overlay" onclick="closeCart()"></div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span onclick="closeCart()">✕</span>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+    <h3>Total: PKR <span id="cart-total">0</span></h3>
+    <button onclick="orderOnWhatsApp()">
+        Order on WhatsApp
+    </button>
+</div>
+</div>
+
+<div id="loader">
+    <h1>VELOURA</h1>
+</div>
+
+<nav>
+    <div class="menu-dropdown">
+    Shop ▼
+    <div class="dropdown-content">
+        <p onclick="scrollToSection('bandanas')">Bandanas</p>
+        <p onclick="scrollToSection('scrunchies')">Scrunchies</p>
+    </div>
+</div>
+    <div class="logo">VELOURA</div>
+
+    <ul>
+        <li onclick="scrollToSection('collections')">Shop</li>
+        <li onclick="scrollToSection('collections')">Collections</li>
+        <li onclick="scrollToSection('hero')">About</li>
+        <li onclick="scrollToSection('footer')">Contact</li>
+    </ul>
+
+    <div class="cart-icon" onclick="openCart()">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+</nav>
+
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+
+<section id="hero" class="hero">
+    <div class="left">
+        <h1>Luxury Hair Accessories</h1>
+        <p>Hair adornments, redefined.</p>
+
+        <button onclick="scrollToSection('collections')">
+            Shop Collection
+        </button>
+    </div>
+
+    <div class="right">
+        <img src="images/hero.jpg.png" alt="Hero Image">
+    </div>
+
+    <div class="about-card">
+        <h3>About Veloura</h3>
+        <p>
+            Luxury hair accessories crafted with elegance,
+            softness, and timeless sophistication.
+            DM FOR ORDERS @shoppveloura
+        </p>
+    </div>
+</section>
+
+<!-- FEATURED -->
+<section id="collections" class="collections">
+    <h2>Featured Collection</h2>
+    <div class="collection-grid">
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=matte'">
+            <img src="images/MATTE BLACK.png">
+            <h3>MATTE BLACK</h3>
+            <p>PKR 550</p>
+            <button onclick="event.stopPropagation(); addToCart('MATTE BLACK',550)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=snow'">
+            <img src="images/SNOW VEIL.png">
+            <h3>SNOW VEIL</h3>
+            <p>PKR 550</p>
+            <button onclick="event.stopPropagation(); addToCart('SNOW VEIL',550)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=noir'">
+            <img src="images/NOIR LACE.jpeg">
+            <h3>NOIR LACE</h3>
+            <p>PKR 550</p>
+            <button onclick="event.stopPropagation(); addToCart('NOIR LACE',550)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- BANDANAS -->
+<section id="bandanas" class="collections">
+    <h2>Bandanas</h2>
+    <div class="collection-grid">
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=opal'">
+            <img src="images/opal pearl.png.jpeg">
+            <h3>OPAL PEARL</h3>
+            <p>PKR 550</p>
+            <button onclick="event.stopPropagation(); addToCart('OPAL PEARL',550)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=gardenia'">
+            <img src="images/gardenia.png.jpeg">
+            <h3>GARDENIA</h3>
+            <p>PKR 550</p>
+            <button onclick="event.stopPropagation(); addToCart('GARDENIA',550)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=lacenoir'">
+            <img src="images/lace noir.png.jpeg">
+            <h3>LACE NOIR</h3>
+            <p>PKR 550</p>
+            <button onclick="event.stopPropagation(); addToCart('LACE NOIR',550)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCRUNCHIES -->
+<section id="scrunchies" class="collections">
+    <h2>Scrunchies</h2>
+    <div class="collection-grid">
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=checklace'">
+            <img src="images/checklace.png.jpeg">
+            <h3>CHECK LACE</h3>
+            <p>PKR 350</p>
+            <button onclick="event.stopPropagation(); addToCart('CHECK LACE',350)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=eira'">
+            <img src="images/eira lace.png.jpeg">
+            <h3>EIRA LACE</h3>
+            <p>PKR 350</p>
+            <button onclick="event.stopPropagation(); addToCart('EIRA LACE',350)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=aura'">
+            <img src="images/lace aura.png.jpeg">
+            <h3>LACE AURA</h3>
+            <p>PKR 350</p>
+            <button onclick="event.stopPropagation(); addToCart('LACE AURA',350)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=luna'">
+            <img src="images/luna pearl.png.jpeg">
+            <h3>LUNA PEARL</h3>
+            <p>PKR 350</p>
+            <button onclick="event.stopPropagation(); addToCart('LUNA PEARL',350)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=pearlnoir'">
+            <img src="images/pearl noir.png.jpeg">
+            <h3>PEARL NOIR</h3>
+            <p>PKR 350</p>
+            <button onclick="event.stopPropagation(); addToCart('PEARL NOIR',350)">Add to Cart</button>
+        </div>
+
+        <div class="collection-card" onclick="window.location.href='product.html?id=raven'">
+            <img src="images/raven lace.png.jpeg">
+            <h3>RAVEN LACE</h3>
+            <p>PKR 350</p>
+            <button onclick="event.stopPropagation(); addToCart('RAVEN LACE',350)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title"></h2>
+        <h3 id="popup-price"></h3>
+        <p id="popup-description"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h2 class="footer-logo">VELOURA</h2>
+            <p class="footer-tagline">
+                Luxury Hair Accessories
+            </p>
+
+            <div class="footer-social">
+                <a href="https://instagram.com/shoppveloura" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/share/191wFwtJcj/?mibextid=wwXIfr" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Policies</h3>
+
+            <a href="shipping.html">Shipping Policy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="refund.html">Return & Exchange</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Information</h3>
+
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="collections.html">Collections</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe to receive exclusive launches, offers and new collections.
+            </p>
+
+            <form class="newsletter">
+
+                <input
+                    type="email"
+                    placeholder="Your email address">
+
+                <button>
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Veloura. All Rights Reserved.
+
+    </div>
+
+</footer>
+</html>

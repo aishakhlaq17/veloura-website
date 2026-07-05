@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veloura Admin Dashboard</title>
+    <style>
+        select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+        body {
+            font-family: Georgia, serif;
+            background: #f8f2eb;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3a2a1f;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 16px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #3a2a1f;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f4ede6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>VELOURA ADMIN DASHBOARD</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Products</th>
+                <th>Total</th>
+                <th>Address</th>
+                <th>Payment</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="orders-table">
+        </tbody>
+    </table>
+
+    <script src="admin.js"></script>
+</body>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h2 class="footer-logo">VELOURA</h2>
+            <p class="footer-tagline">
+                Luxury Hair Accessories
+            </p>
+
+            <div class="footer-social">
+                <a href="https://instagram.com/shoppveloura" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/share/191wFwtJcj/?mibextid=wwXIfr" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Policies</h3>
+
+            <a href="shipping.html">Shipping Policy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="refund.html">Return & Exchange</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Information</h3>
+
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="collections.html">Collections</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe to receive exclusive launches, offers and new collections.
+            </p>
+
+            <form class="newsletter">
+
+                <input
+                    type="email"
+                    placeholder="Your email address">
+
+                <button>
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Veloura. All Rights Reserved.
+
+    </div>
+
+</footer>
+</html>
